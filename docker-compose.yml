@@ -1,0 +1,61 @@
+services:
+  home-to-cart:
+    build:
+      context: .
+      dockerfile: home-to-cart/Dockerfile
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./home-to-cart:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+    networks:
+      - microfrontend-network
+    restart: unless-stopped
+
+  checkout:
+    build:
+      context: .
+      dockerfile: checkout/Dockerfile
+    ports:
+      - "3002:3000"
+    volumes:
+      - ./checkout:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+    networks:
+      - microfrontend-network
+    restart: unless-stopped
+
+  order:
+    build:
+      context: .
+      dockerfile: order/Dockerfile
+    ports:
+      - "3003:3000"
+    volumes:
+      - ./order:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+    networks:
+      - microfrontend-network
+    restart: unless-stopped
+
+networks:
+  microfrontend-network:
+    driver: bridge
+
+volumes:
+  node_modules_frontend_common:
+  node_modules_home_to_cart:
+  node_modules_checkout:
+  node_modules_order:

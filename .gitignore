@@ -1,0 +1,153 @@
+# Dependencies in all subdirectories
+*/node_modules/
+**/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*/package-lock.json
+*/yarn.lock
+*/pnpm-lock.yaml
+
+# Next.js build outputs in all subdirectories
+.next/
+*/.next/
+**/.next/
+out/
+*/out/
+**/out/
+build/
+*/build/
+**/build/
+dist/
+*/dist/
+**/dist/
+
+# TypeScript build outputs
+*/*.tsbuildinfo
+**/*.tsbuildinfo
+*/next-env.d.ts
+*/tsconfig.tsbuildinfo
+
+# Environment files in all subdirectories
+*/.env
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
+**/.env*
+
+# Cache directories
+*/.cache/
+**/.cache/
+*/.parcel-cache/
+**/.parcel-cache/
+*/.rpt2_cache/
+*/.rts2_cache_cjs/
+*/.rts2_cache_es/
+*/.rts2_cache_umd/
+
+# Coverage reports
+*/coverage/
+**/coverage/
+*/.nyc_output/
+**/.nyc_output/
+*/*.lcov
+
+# Logs in all subdirectories
+*/logs/
+**/logs/
+*/*.log
+**/*.log
+
+# Runtime data
+*/pids/
+**/pids/
+*/*.pid
+*/*.seed
+*/*.pid.lock
+
+# Optional npm/yarn cache
+*/.npm/
+**/.npm/
+*/.yarn/
+**/.yarn/
+*/.pnp.*
+**/.pnp.*
+
+# ESLint and Stylelint cache
+*/.eslintcache
+**/.eslintcache
+*/.stylelintcache
+**/.stylelintcache
+
+# Serverless directories
+*/.serverless/
+**/.serverless/
+
+# FuseBox cache
+*/.fusebox/
+**/.fusebox/
+
+# DynamoDB Local files
+*/.dynamodb/
+**/.dynamodb/
+
+# TernJS port file
+*/.tern-port
+**/.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+*/.vscode-test/
+**/.vscode-test/
+
+# OS generated files
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary folders
+*/tmp/
+**/tmp/
+*/temp/
+**/temp/
+
+# Docker related (if any)
+*/Dockerfile.dev
+**/Dockerfile.dev
+
+# Test coverage
+*/test-results/
+**/test-results/
+*/playwright-report/
+**/playwright-report/
+
+# Storybook build outputs
+*/storybook-static/
+**/storybook-static/
+
+# Miscellaneous
+*.tgz
+*.tar.gz
+.grunt
+lib-cov
+.lock-wscript
